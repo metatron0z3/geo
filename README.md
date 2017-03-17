@@ -8,7 +8,7 @@
 
 + **Language & Storage** - This was done with only PHP (using Symfony framework) & Postgres with the Post GIS Extension. Because of the limited time, I did not have time to test the API route with Postman. But if you have Postgres running somewhere in your office, you'll be able to build the database and call the stored function directly form the command line. It Works!
 
-+ **Performance** - I'm guessing there is an index I could add on the country and point fields to optimize the query. I'm not going to go too much further into this since I have not done a ton of it.
++ **Performance** - I'm guessing there is an index I could add on the country and point fields to optimize the query. I've done my share of EXPLAIN ANALYZE and reviewing the Query Planner on large complex qeuries. On a one table database, there is not much more to do in this case.
 
 
 ## Problem 4 - Get Closest Airports
