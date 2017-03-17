@@ -21,10 +21,9 @@ Everything else is done in the database. Please look in the SQL directory where 
 
 From there I wrote one function which queries for all the airports in both countries passed into the action. It then calculates the min distance between all the members of each set. For the United States and Mexico, the output looks like:
 
-City1     | City1_Iata | City2   | City2_Iata | Distance
-
-==========================================================
-San Diego,  SDM,         Tijuana,  TIJ,         0.0327719281245385
+| City1 | City1_Iata | City2   | City2_Iata | Distance |
+|-------|------------|---------|------------|----------|
+|San Diego |  SDM |    Tijuana |  TIJ |    0.0327719281245385
 (1 row)
 
 Given a little more time, I'd convert the Distance value to kilometers.
